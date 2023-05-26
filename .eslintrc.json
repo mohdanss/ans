@@ -1,3 +1,15 @@
 {
-  "extends": "next/core-web-vitals"
+	"extends": "next/core-web-vitals",
+	"rules": {
+		"indent": ["error", 4],
+		"no-var": "error",
+		"no-console": "error",
+		"no-alert": "error",
+		"no-debugger": "error",
+		"no-multiple-empty-lines": ["error", { "max": 1 }],
+		"no-trailing-spaces": "error",
+		"no-multi-spaces": "error",
+		"react/jsx-no-useless-fragment": "error",
+		"camelcase": "error"
+	}
 }

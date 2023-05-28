@@ -1,15 +1,15 @@
 export const NavbarSectionItems = [
     {
         name: "About",
-        link: "/about",
+        link: "#about",
     },
     {
         name: "Projects",
-        link: "/projects",
+        link: "#projects",
     },
     {
         name: "Blog",
-        link: "/blog",
+        link: "#blog",
     },
 ];
 

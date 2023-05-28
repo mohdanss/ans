@@ -10,20 +10,6 @@ class Ans {
         year: "2019 - 2023"
     };
 
-    skills = [
-        "Problem Solving",
-        "Web Engineering",
-        "Mobile Engineering",
-        "UI/UX Designing"
-    ];
-
-    socialMediaLinks = [
-        {
-            LinkedIn: "mohdans",
-            GitHub: "mohdanss",
-        }
-    ];
-
     contact = {
         email: "mohd.ans.riaz@gmail.com",
         phone: "+92 308 5062 108",
@@ -37,8 +23,6 @@ class Ans {
             duration: "2020 - Present",
         }
     };
-
-    projects = "Check out my projects on GitHub!";
 }
 `;
 

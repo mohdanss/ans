@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import "./Navbar.styles.css";
 
 import { Author, NavbarSectionItems, SocialMediaLinks } from "../../../MetaData/Navbar.data";
@@ -21,12 +22,13 @@ const Navbar = (props: Props) => {
                         role="listitem"
                         aria-label={`${item.name} page/section item`}
                     >
-                        <a
+                        <Link
+                            key={item.name}
                             href={item.link}
                             aria-label={`${item.name} page/section link`}
                         >
                             {item.name}.
-                        </a>
+                        </Link>
                     </li>
                 ))}
             </ul>

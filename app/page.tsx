@@ -19,7 +19,7 @@ export default function Home() {
     React.useEffect(() => {
         const interval = setInterval(() => {
             setIsLoading(false);
-        }, 3000);
+        },0);
 
         return () => clearInterval(interval);
     }, []);

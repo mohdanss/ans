@@ -16,13 +16,20 @@ class Ans {
         address: "Lahore, Pakistan"
     };
 
-    workExperience = {
-        freelance: {
+    workExperience = [
+        {
+            title: "Co-Founder and Full Stack Engineer",
+            company: "Innovaxel",
+            duration: "2021 - Present",
+            type: "hybrid",
+        },
+        {
             title: "UI/UX Designer & Frontend Engineer",
             company: "Fiverr & Upwork",
             duration: "2020 - Present",
+            type: "freelance",
         }
-    };
+    ];
 }
 `;
 

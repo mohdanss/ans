@@ -41,7 +41,7 @@ const Footer = (props: Props) => {
                 </div>
             </section >
             <div className="footer-bottom">
-                <p>Designed and Developed with 🫶.</p>
+                <p>Designed and Developed with 🧠 by Ans</p>
             </div>
         </>
     )

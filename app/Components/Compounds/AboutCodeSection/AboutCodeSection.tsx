@@ -6,32 +6,31 @@ import aboutMeCode from "@/app/MetaData/AboutMe.data";
 type Props = {};
 
 const AboutCodeSection = (props: Props) => {
-    return (
-        <>
-            <VSCodeHeader />
-            <div className="vscode-body">
-                <div className="body-content">
-                    <Highlight
-                        theme={themes.github}
-                        code={aboutMeCode}
-                        language="jsx"
-                    >
-                        {({ className, style, tokens, getLineProps, getTokenProps }) => (
-                            <pre style={style} className="codeBlock">
-                                {tokens.map((line, i) => (
-                                    <div key={i} {...getLineProps({ line })} className="line" style={{ animationDelay: `${i * 0.1}s` }}>
-                                        <span className="lineNumber">{i + 1}</span>
-                                        {line.map((token, key) => (
-                                            <span key={key} {...getTokenProps({ token })} />
-                                        ))}
-                                    </div>
-                                ))}
-                            </pre>
-                        )}
-                    </Highlight>
-                </div>
-            </div >
-        </>
+    return (<>
+        <VSCodeHeader />
+        <div className="vscode-body">
+            <div className="body-content">
+                <Highlight
+                    theme={themes.github}
+                    code={aboutMeCode}
+                    language="jsx"
+                >
+                    {({ className, style, tokens, getLineProps, getTokenProps }) => (
+                        <pre style={style} className="codeBlock">
+                            {tokens.map((line, i) => (
+                                <div key={i} {...getLineProps({ line })} className="line" style={{ animationDelay: `${i * 0.1}s` }}>
+                                    <span className="lineNumber">{i + 1}</span>
+                                    {line.map((token, key) => (
+                                        <span key={key} {...getTokenProps({ token })} />
+                                    ))}
+                                </div>
+                            ))}
+                        </pre>
+                    )}
+                </Highlight>
+            </div>
+        </div >
+    </>
     );
 }
 

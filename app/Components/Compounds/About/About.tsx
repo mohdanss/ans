@@ -1,6 +1,7 @@
 import React from "react";
 import "./About.styles.css";
 import AboutCodeSection from "../AboutCodeSection/AboutCodeSection";
+import { Parallax } from "react-scroll-parallax";
 
 type Props = {};
 
@@ -19,12 +20,18 @@ const About = (props: Props) => {
                         </div>
                     </div>
                     <div className="container right">
-                        <div className="content content-right">
-                            <h1>About me</h1>
-                            <section className="about-me-code-section" aria-label="about me code section">
-                                <AboutCodeSection />
-                            </section>
-                        </div>
+                        <Parallax
+                            translateX={['100px', '0px']}
+                            opacity={[0.8,1]}
+                            easing="easeInQuad"
+                        >
+                            <div className="content content-right">
+                                <h1>About me</h1>
+                                <section className="about-me-code-section" aria-label="about me code section">
+                                    <AboutCodeSection />
+                                </section>
+                            </div>
+                        </Parallax>
                     </div>
                 </div>
             </div>

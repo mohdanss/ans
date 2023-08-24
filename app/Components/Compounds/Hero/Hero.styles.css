@@ -19,7 +19,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: flex-end;
-	width: 80%;
+	width: min(80%, 1080px);
 	height: 100%;
 }
 

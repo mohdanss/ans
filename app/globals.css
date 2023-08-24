@@ -8,7 +8,6 @@
 
 :root {
   --max-width: 100vh;
-  
   --font-helvetica: helvetica, sans-serif;
   --font-josefin: 'Josefin Slab', serif;
   --font-size: 16px;
@@ -18,7 +17,6 @@
   --font-weight-light: 300;
   --font-weight-normal: 400;
   --font-weight-bold: 600;
-
   --color-dark: #000000;
   --color-light: #ffffff;
   --color-primary: #cc3;

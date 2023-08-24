@@ -5,6 +5,7 @@ nav {
 	align-items: center;
 	justify-content: space-between;
 	width: 80%;
+	max-width: min(80%,1080px);
 	height: 50px;
 	animation: fadein 1s;
 }

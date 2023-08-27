@@ -1,4 +1,8 @@
-
+@media screen and (max-width:600px) {
+    .about-me-code-section{
+        display: none !important;
+    }
+}
 .about-me-code-section{
     display: flex;
     flex-direction: column;

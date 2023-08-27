@@ -1,0 +1,30 @@
+.ard {
+    padding: 10px 0;
+}
+
+.ard h2 {
+    color: #333;
+    font-weight: 300;
+    font-size: 1.1rem;
+    margin-top: 8px;
+}
+
+.ard p {
+    font-weight: 300;
+    color: #999;
+    margin: 5px 0;
+}
+
+.ard ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.ard li {
+    padding-top: 4px;
+    margin-top: 4px;
+}
+
+.ard li p {
+    margin: 5px 0;
+}

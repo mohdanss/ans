@@ -1,11 +1,15 @@
 import React from "react";
 import "./About.styles.css";
-import AboutCodeSection from "../AboutCodeSection/AboutCodeSection";
+import AboutCodeSection from "./AboutCodeSection/AboutCodeSection";
 import { Parallax } from "react-scroll-parallax";
+import AboutResponsiveDesign from "./AboutResponsiveDesign/AboutResponsiveDesign";
 
 type Props = {};
 
 const About = (props: Props) => {
+    const screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    const isDesktop = screenWidth > 600;
+
     return (
         <section
             aria-label="about section for detailed information about the author"
@@ -20,18 +24,27 @@ const About = (props: Props) => {
                         </div>
                     </div>
                     <div className="container right">
-                        <Parallax
-                            translateX={['100px', '0px']}
-                            opacity={[0.8,1]}
-                            easing="easeInQuad"
-                        >
+                        {isDesktop ? (
+                            <Parallax
+                                translateX={['100px', '0px']}
+                                opacity={[0.8, 1]}
+                                easing="easeInQuad"
+                            >
+                                <div className="content content-right">
+                                    <h1>About me</h1>
+                                    <section className="about-me-code-section" aria-label="about me code section">
+                                        <AboutCodeSection />
+                                    </section>
+                                </div>
+                            </Parallax>
+                        ) : (
                             <div className="content content-right">
                                 <h1>About me</h1>
-                                <section className="about-me-code-section" aria-label="about me code section">
-                                    <AboutCodeSection />
+                                <section className="about-me-responsive-section" aria-label="about me code section">
+                                    <AboutResponsiveDesign />
                                 </section>
                             </div>
-                        </Parallax>
+                        )}
                     </div>
                 </div>
             </div>

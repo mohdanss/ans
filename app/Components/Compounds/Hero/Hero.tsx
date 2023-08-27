@@ -25,7 +25,7 @@ const Hero = (props: Props) => {
                         <Parallax speed={-10} opacity={[1,0.5]}>
                             <div className="content content-right">
                                 <h1>Software Engineer<span className="_">_</span></h1>
-                                <h3>entrepreneurship - tech - design - data science</h3>
+                                <h3>entrepreneurship • tech • design • data science</h3>
                             </div>
                         </Parallax>
                     </div>

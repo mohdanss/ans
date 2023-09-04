@@ -26,9 +26,9 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	user-select: none;
 	cursor: none;
 	--webkit-user-select: none;
+	user-select: none;
 }
 
 .jt__text {
@@ -97,4 +97,10 @@
 	flex-direction: column;
 	width: 100vw;
 	height: 100vh;
+}
+
+@media screen and (max-width: 900px) {
+	.jt {
+		font-size: 4vmin;
+	}
 }

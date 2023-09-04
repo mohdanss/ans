@@ -6,12 +6,17 @@ import { useRef } from "react";
 
 import { Author, NavbarSectionItems, SocialMediaLinks } from "../../../MetaData/Navbar.data";
 import { Spiral as Hamburger } from 'hamburger-react'
+import { toast } from "react-hot-toast";
 
 type Props = {};
 
 const Navbar = (props: Props) => {
     const width = useRef(window.innerWidth);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const showAvailableSoon = () => {
+        toast("Will be launched by 2094!");
+    }
 
     return width.current > 800 ? (
         <nav
@@ -32,7 +37,9 @@ const Navbar = (props: Props) => {
                         <Link
                             key={item.name}
                             href={item.link}
+                            scroll={false}
                             aria-label={`${item.name} page/section link`}
+                            onClick={(item.name === 'Projects' || item.name === 'Blog') ? showAvailableSoon : () => window.location.hash = `#/${item.name.toLowerCase()}`}
                         >
                             {item.name}.
                         </Link>
@@ -58,6 +65,7 @@ const Navbar = (props: Props) => {
                         <a
                             href={item.link}
                             aria-label={`${item.name} social media link`}
+                            target="_blank"
                         >
                             {item.name}.
                         </a>

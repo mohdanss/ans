@@ -28,10 +28,9 @@ const Footer = (props: Props) => {
                                     <div className="amfs-right">
                                         <p>{"Let's connect ;)"}</p>
                                         <ul>
-                                            {/* TODO: Add links here */}
-                                            <li>Linkedin</li>
-                                            <li>Twitter</li>
-                                            <li>Github</li>
+                                            <li><a target="_blank" rel="noopener" href="https://www.linkedin.com/in/mohdans">Linkedin</a></li>
+                                            <li><a target="_blank" rel="noopener" href="https://github.com/mohdanss">Github</a></li>
+                                            <li><a target="_blank" rel="noopener" href="https://twitter.com/muhammadansraza">Twitter</a></li>
                                         </ul>
                                     </div>
                                 </section>

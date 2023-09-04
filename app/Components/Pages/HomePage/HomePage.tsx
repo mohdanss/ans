@@ -6,6 +6,7 @@ import About from '../../Compounds/About/About';
 import Footer from '../../Compounds/Footer/Footer';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import AnimatedCursor from "react-animated-cursor";
+import { Toaster } from 'react-hot-toast';
 
 type Props = {};
 
@@ -26,6 +27,7 @@ const HomePage = (props: Props) => {
                     backgroundColor: '#999'
                 }}
             />
+            <Toaster />
             <main role="main" aria-label="main content">
                 <Navbar />
                 <Hero />

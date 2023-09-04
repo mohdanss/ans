@@ -16,15 +16,15 @@ export const NavbarSectionItems = [
 export const SocialMediaLinks = [
     {
         name: "LinkedIn",
-        link: "#",
+        link: "https://www.linkedin.com/in/mohdans",
     },
     {
         name: "GitHub",
-        link: "#",
+        link: "https://github.com/mohdanss",
     },
     {
         name: "Twitter",
-        link: "#",
+        link: "https://twitter.com/muhammadansraza",
     },
 ];
 

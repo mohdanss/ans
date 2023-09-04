@@ -20,7 +20,6 @@ export default function Home() {
         const interval = setInterval(() => {
             setIsLoading(false);
         },0);
-
         return () => clearInterval(interval);
     }, []);
 

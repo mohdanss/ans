@@ -39,7 +39,7 @@ const Navbar = (props: Props) => {
                             href={item.link}
                             scroll={false}
                             aria-label={`${item.name} page/section link`}
-                            onClick={(item.name === 'Projects' || item.name === 'Blog') ? showAvailableSoon : () => window.location.hash = `#/${item.name.toLowerCase()}`}
+                            onClick={(item.name === 'Projects' || item.name === 'Blog') ? showAvailableSoon : () => window.location.hash = `/#${item.name.toLowerCase()}`}
                         >
                             {item.name}.
                         </Link>

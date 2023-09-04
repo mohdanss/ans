@@ -16,6 +16,7 @@ const Navbar = (props: Props) => {
 
     const showAvailableSoon = () => {
         toast("Will be launched by 2094!");
+        isMenuOpen && setIsMenuOpen(!isMenuOpen);
     }
 
     return width.current > 800 ? (
@@ -39,7 +40,7 @@ const Navbar = (props: Props) => {
                             href={item.link}
                             scroll={false}
                             aria-label={`${item.name} page/section link`}
-                            onClick={(item.name === 'Projects' || item.name === 'Blog') ? showAvailableSoon : () => window.location.hash = `/#${item.name.toLowerCase()}`}
+                            onClick={(item.name === 'Projects' || item.name === 'Blog') ? showAvailableSoon : () => window.location.hash = `${item.name.toLowerCase()}`}
                         >
                             {item.name}.
                         </Link>
@@ -105,6 +106,7 @@ const Navbar = (props: Props) => {
                                         key={item.name}
                                         href={item.link}
                                         aria-label={`${item.name} page/section link`}
+                                        onClick={(item.name === 'Projects' || item.name === 'Blog') ? showAvailableSoon : () => window.location.hash = `${item.name.toLowerCase()}`}
                                     >
                                         {item.name}.
                                     </Link>

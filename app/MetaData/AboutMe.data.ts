@@ -18,16 +18,22 @@ class Ans {
 
     workExperience = [
         {
-            title: "Co-Founder and Full Stack Engineer",
+            title: "Co-Founder",
             company: "Innovaxel",
             duration: "2021 - Present",
             type: "hybrid",
         },
         {
             title: "UI/UX Designer & Frontend Engineer",
-            company: "Fiverr & Upwork",
+            company: "Fiverr, Freelancer & Upwork",
             duration: "2020 - Present",
             type: "freelance",
+        },
+        {
+            title: "Machine Learning Engineer",
+            company: "Devsinc",
+            duration: "2023 - Present",
+            type: "onsite",
         }
     ];
 }
